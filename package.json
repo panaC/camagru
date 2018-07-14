@@ -2,15 +2,21 @@
   "name": "camagru",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "dev": "concurrently \"react-scripts start\" \"PORT=8080 nodemon ./camagru-node-api/index.js\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.2"
   }
 }
