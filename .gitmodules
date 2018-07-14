@@ -1,0 +1,3 @@
+[submodule "camagru-node-api"]
+	path = camagru-node-api
+	url = https://github.com/panaC/camagru-node-api.git
